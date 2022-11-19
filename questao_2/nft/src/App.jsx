@@ -1,14 +1,21 @@
 import { useState } from 'react'
-import GlobalStyle from "./styles/styles";
+
 
 import Home from "./pages/home/index"
+import HeaderPage from "./components/organisms/header/index"
+import FooterPage from "./components/organisms/footer/index"
+
+import Theme from "./styles/theme"
 
 function App() {
   return (
-    <div>
-      <Home />
-      <GlobalStyle />
-    </div>
+    <>
+      <Theme>
+        <HeaderPage />
+        <Home />
+        <FooterPage />
+      </Theme>
+    </>
   )
 }
 
