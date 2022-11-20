@@ -18,7 +18,7 @@
 
   ## 📄 Screenshots
   ![alt text](https://i.postimg.cc/FsDWYgTV/Captura-de-Tela-2.png)
-  ![alt text](https://i.postimg.cc/vZTPfgjF/Captura-de-Tela-3.png)
+  ![alt text](https://i.postimg.cc/Rhh1kCFt/Captura-de-Tela-6.png)
 
 
 # Questão 3 - Tabelas
