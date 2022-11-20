@@ -1,3 +1,4 @@
+-- testado em https://www.mycompiler.io/new/sql
 -- criacao das tabelas
 CREATE TABLE pessoas (
   id INTEGER NOT NULL,
