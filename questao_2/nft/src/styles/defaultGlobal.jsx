@@ -9,6 +9,8 @@ export default {
     huge: "24px",
 
     display: "120px",
+    displayMd: "80px",
+    displaySm: "60px",
     headline1: "64px",
     headline2: "48px",
     headline3: "40px",
@@ -32,12 +34,14 @@ export default {
     
     LightGreen: "#76DECC",
     Pink: "#EA6CBC",
+    PinkTransparency: "rgba(234,108,188,.3)",
     Red: "#FB4539",
   },
-  breakpoints: {
+  screen: {
     sm: "screen and (max-width: 640px)",
-    md: "screen and (max-width: 768px)",
-    lg: "screen and (max-width: 1024px)",
-    xl: "screen and (max-width: 1280px)",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+    giant: "3150px",
   },
 };

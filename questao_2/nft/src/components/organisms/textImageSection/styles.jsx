@@ -2,12 +2,21 @@ import styled from "styled-components";
 
 export const Content = styled.ul`
   display: flex;
+  flex-direction: row;
   margin: 10rem 20% 0 20%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 
   gap: 15rem;
+
+  @media (max-width: ${(props) => props.theme.screen.lg}) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+  }
 `;
 
 export const TextInfo = styled.div`
@@ -17,6 +26,14 @@ export const TextInfo = styled.div`
   max-width: 30%;
 
   gap: 2rem;
+
+  @media (max-width: ${(props) => props.theme.screen.lg}) {
+    max-width: 100%;
+  }
+
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    max-width: 100%;
+  }
 `;
 
 export const SpanSub = styled.span`

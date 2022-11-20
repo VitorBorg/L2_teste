@@ -4,12 +4,12 @@ export const NavbarStyle = styled.nav`
 /* position: fixed; */
 top: 0;
 left: 0;
-width: 100vw;
+width: auto;
 
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 40px;
+padding: 60px;
 
 div{
   width: 33vw;
@@ -17,6 +17,11 @@ div{
 
 div:last-child{
   justify-content: flex-end;
+}
+
+
+@media (max-width: ${(props) => props.theme.screen.xl}) {
+  display: none;
 }
 
 `;

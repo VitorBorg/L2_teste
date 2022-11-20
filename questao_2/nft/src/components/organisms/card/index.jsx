@@ -7,12 +7,8 @@ import ButtonGray from '../../molecules/buttonGray/index';
 import LogoIcon from '../../atoms/logoIcon';
 import ClockIcon from '../../atoms/clockIcon/index';
 import HeartIcon from '../../atoms/heartIcon/index';
-import image from '../../../assets/nft_1.png';
-import people_1 from '../../../assets/people_1.jpg';
-import people_4 from '../../../assets/people_4.png';
-import people_6 from '../../../assets/people_6.png';
 
-const Card = () => {
+const Card = ({image}) => {
   return (
     <>
     <S.Card>
@@ -42,15 +38,15 @@ const Card = () => {
         <S.DataContent>
           <div>
             <S.ImageIcon>
-              <img src={people_1} alt="nft image"/>
+              <img src='/people_1.jpg' alt="nft image"/>
             </S.ImageIcon>
 
             <S.ImageIcon>
-              <img src={people_4} alt="nft image"/>
+              <img src='/people_4.png' alt="nft image"/>
             </S.ImageIcon>
 
             <S.ImageIcon>
-              <img src={people_6} alt="nft image"/>
+              <img src='/people_6.png' alt="nft image"/>
             </S.ImageIcon>
 
           </div>

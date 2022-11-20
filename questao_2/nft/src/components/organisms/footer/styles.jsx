@@ -8,6 +8,8 @@ justify-content: center;
 align-items: center;
 height: 400px;
 
+margin-top: 20rem;
+
 section:nth-child(1) {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -17,6 +19,11 @@ section:nth-child(3) {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
+@media (max-width: ${(props) => props.theme.screen.lg}) {
+    height: auto;
+    flex-direction: column;
+  }
 `;
 
 export const FooterSection = styled.section`
@@ -30,6 +37,12 @@ export const FooterSection = styled.section`
 
   border: 1px solid ${(props) => props.theme.colors.dark};
   box-shadow: 0px 0px 5px ${(props) => props.theme.colors.dark};
+
+  @media (max-width: ${(props) => props.theme.screen.lg}) {
+    div {
+      padding-bottom: 30px;
+    }
+  }
 `;
 
 export const Social = styled.div`
@@ -44,6 +57,8 @@ export const Social = styled.div`
       fill: ${(props) => props.theme.colors.letter};
     }
   }
+
+
 `;
 
 export const MenuDivLinks = styled.div`
